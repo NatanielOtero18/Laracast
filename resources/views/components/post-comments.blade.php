@@ -3,7 +3,7 @@
     <article class="flex flex-col  p-3 ">
         <div class="flex items-center space-x-2 ">
             <div>
-                <img src="https://i.pravatar.cc/150?u={{ $comment->author->id }}" alt="avatar" height="60"
+                <img src="https://i.pravatar.cc/150?u={{ $comment->user_id }}" alt="avatar" height="60"
                     width="60">
             </div>
             {{-- https://pbs.twimg.com/media/FO8nQ9yXIAkTqfl.jpg --}}
