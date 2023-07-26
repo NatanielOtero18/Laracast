@@ -15,7 +15,7 @@
             </svg>
         </button>
     </x-slot>
-    <x-dropdown-item href="/?{{ http_build_query(request()->except('category','page')) }}" :active="request()->routeIs('home')">
+    <x-dropdown-item href="/?{{ http_build_query(request()->except('category','page')) }}" :active="request()->is('home') ">
         All
     </x-dropdown-item>
 

@@ -17,7 +17,8 @@ class MustBeAdmin
     {
         if (auth()->user()?->username !== 'Nataniel' ) {
             # code...
-            abort(Response::HTTP_FORBIDDEN);
+            //abort(Response::HTTP_FORBIDDEN);
+            return redirect(route('login'));
         }
         return $next($request);
     }

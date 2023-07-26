@@ -20,8 +20,8 @@ class CommentsFactory extends Factory
     {
         return [
             //
-            'post_id' => Post::find(rand(1,28)),
-            'user_id' => User::find(rand(1,35)),
+            'post_id' => Post::find(rand(1,20)),
+            'user_id' => User::find(rand(1,20)),
             'body' => fake()->paragraph(),
 
         ];

@@ -8,12 +8,8 @@
             <h2 class="ml-3">Want to participate?</h2>
         </header>
         <div class="mt-4">
-            <textarea name="body" id="body" class="w-full p-2 text-sm focus:outline-none focus:ring" rows="5"
-                placeholder="Comment..." required></textarea>
-
-            @error('body')
-                <x-error-msg>{{ $message }}</x-error-msg>
-            @enderror
+            <x-forms.textarea name="body" />
+                <x-error-msg name="body" />
         </div>
         <div class="flex justify-end border-t border-gray-400 py-2">
             <button type="submit"
